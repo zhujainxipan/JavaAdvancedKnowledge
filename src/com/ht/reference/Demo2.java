@@ -19,16 +19,16 @@ public class Demo2 {
         // 弱引用,没有队列,可以有
         String hello1 = new String("hello");
         WeakReference<String> sr1 = new WeakReference<String>(hello1);
-        hello1 = "222";
+        hello1 = null;
         System.out.println(sr1.get());
-        System.gc();
-        System.out.println(sr1.get());
+//        System.gc();
+//        System.out.println(sr1.get());
 
         // 虚引用,有队列
         ReferenceQueue<String> queue = new ReferenceQueue<>();
         String hello2 = new String("hello");
         PhantomReference<String> pr = new PhantomReference<>(hello2, queue);
-        hello2 = "333";
+        hello2 = null;
         System.out.println(pr.get());
     }
 
