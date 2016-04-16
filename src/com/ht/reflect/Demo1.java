@@ -1,4 +1,4 @@
-package reflect;
+package com.ht.reflect;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -46,13 +46,13 @@ public class Demo1 {
 
         Class<? extends Person> personClass = person.getClass();
         System.out.println(personClass.getName());
-        // 输出结果:reflect.Person
+        // 输出结果:com.ht.reflect.Person
 
         Class<Person> personClass1 = Person.class;
         System.out.println(personClass1.getName());
-        // 输出结果:reflect.Person
+        // 输出结果:com.ht.reflect.Person
 
-        Class<?> aClass = Class.forName("reflect.Person");
+        Class<?> aClass = Class.forName("com.ht.reflect.Person");
         Object object = aClass.newInstance();
         Person person1 = (Person) object;
 
