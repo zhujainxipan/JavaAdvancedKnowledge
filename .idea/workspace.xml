@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e2db48f-003e-4413-ae7c-8d656e3bb59e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ht/concurrency/chapter2/ArrayListMuliThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter2/ArrayListMuliThread$AddThread.class" afterPath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter2/ArrayListMuliThread$AddThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter2/ArrayListMuliThread.class" afterPath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter2/ArrayListMuliThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaAdvancedKnowledge.iws" />
@@ -25,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ArrayListMuliThread.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter2/ArrayListMuliThread.java">
+      <file leaf-file-name="ReenterLock.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21794872">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.18681319">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -63,6 +65,7 @@
         <option value="$PROJECT_DIR$/src/com/ht/exception/ExecptionTest.java" />
         <option value="$PROJECT_DIR$/src/com/ht/concurrency/chapter2/AccountingVol.java" />
         <option value="$PROJECT_DIR$/src/com/ht/concurrency/chapter2/ArrayListMuliThread.java" />
+        <option value="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLock.java" />
       </list>
     </option>
   </component>
@@ -157,6 +160,10 @@
               <option name="myItemId" value="concurrency" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -188,27 +195,7 @@
       </pane>
     </panes>
   </component>
-  <component name="RunManager" selected="Application.ArrayListMuliThread">
-    <configuration default="false" name="Demo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ht.reference.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ht.reference.Demo2" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="JavaAdvancedKnowledge" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ReenterLock">
     <configuration default="false" name="AddAllTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -277,6 +264,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.ht.concurrency.chapter2.ArrayListMuliThread" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="JavaAdvancedKnowledge" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReenterLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ht.concurrency.chapter3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.ht.concurrency.chapter3.ReenterLock" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -546,19 +553,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Demo2" />
-      <item index="1" class="java.lang.String" itemvalue="Application.AddAllTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ExecptionTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.AccountingVol" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ArrayListMuliThread" />
+      <item index="0" class="java.lang.String" itemvalue="Application.AddAllTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ExecptionTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.AccountingVol" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ArrayListMuliThread" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ReenterLock" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ArrayListMuliThread" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AccountingVol" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ExecptionTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.AddAllTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Demo2" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ReenterLock" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ArrayListMuliThread" />
+        <item index="2" class="java.lang.String" itemvalue="Application.AccountingVol" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ExecptionTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.AddAllTest" />
       </list>
     </recent_temporary>
   </component>
@@ -595,10 +602,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21691678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21691678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24489796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24489796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -995,8 +1002,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter2/ArrayListMuliThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21794872">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.47069597">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18681319">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="9" />
           <folding />
         </state>
       </provider>
