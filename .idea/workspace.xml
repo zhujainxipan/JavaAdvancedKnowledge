@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e2db48f-003e-4413-ae7c-8d656e3bb59e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter2/ArrayListMuliThread$AddThread.class" afterPath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter2/ArrayListMuliThread$AddThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter2/ArrayListMuliThread.class" afterPath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter2/ArrayListMuliThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLock.java" afterPath="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLock.java" />
     </list>
     <ignored path="JavaAdvancedKnowledge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +27,8 @@
       <file leaf-file-name="ReenterLock.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18681319">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.53296703">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -1010,8 +1007,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18681319">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.53296703">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding />
         </state>
       </provider>
