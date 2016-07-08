@@ -14,8 +14,11 @@ public class ReenterLock implements Runnable {
     public void run() {
         for (int j = 0; j < 10000000; j++) {
             lock.lock();
-            i++;
-            lock.unlock();
+            try {
+                i++;
+            } finally {
+                lock.unlock();
+            }
         }
     }
 
