@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e2db48f-003e-4413-ae7c-8d656e3bb59e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/FairLock.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLockcondition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter3/ReenterLock.class" afterPath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter3/ReenterLock.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaAdvancedKnowledge.iws" />
@@ -25,12 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FairLock.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FairLock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/FairLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0964539">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReenterLockcondition.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLockcondition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14468086">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,6 +81,7 @@
         <option value="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/TryLock.java" />
         <option value="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLock.java" />
         <option value="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/FairLock.java" />
+        <option value="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLockcondition.java" />
       </list>
     </option>
   </component>
@@ -197,27 +211,7 @@
       </pane>
     </panes>
   </component>
-  <component name="RunManager" selected="Application.TryLock">
-    <configuration default="false" name="ArrayListMuliThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ht.concurrency.chapter2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ht.concurrency.chapter2.ArrayListMuliThread" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="JavaAdvancedKnowledge" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ReenterLockcondition">
     <configuration default="false" name="ReenterLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -286,6 +280,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.ht.concurrency.chapter3.TryLock" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="JavaAdvancedKnowledge" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReenterLockcondition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ht.concurrency.chapter3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.ht.concurrency.chapter3.ReenterLockcondition" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -555,19 +569,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ArrayListMuliThread" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ReenterLock" />
-      <item index="2" class="java.lang.String" itemvalue="Application.IntLock" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TimeLock" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TryLock" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ReenterLock" />
+      <item index="1" class="java.lang.String" itemvalue="Application.IntLock" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TimeLock" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TryLock" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ReenterLockcondition" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TryLock" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TimeLock" />
-        <item index="2" class="java.lang.String" itemvalue="Application.IntLock" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ReenterLock" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ArrayListMuliThread" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ReenterLockcondition" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TryLock" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TimeLock" />
+        <item index="3" class="java.lang.String" itemvalue="Application.IntLock" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ReenterLock" />
       </list>
     </recent_temporary>
   </component>
@@ -665,13 +679,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ht/reference/Demo2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ht/listaddall/AddAllTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1076,9 +1083,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/FairLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0964539">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReenterLockcondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14468086">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
