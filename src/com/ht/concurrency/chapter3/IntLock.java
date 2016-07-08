@@ -59,8 +59,6 @@ public class IntLock implements Runnable {
         Thread t2 = new Thread(il2);
         t1.start();
         t2.start();
-        t1.join();
-        t2.join();
         Thread.sleep(1000);
         // 中断其中一个线程
         t2.interrupt();
