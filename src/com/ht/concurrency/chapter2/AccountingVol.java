@@ -2,7 +2,7 @@ package com.ht.concurrency.chapter2;
 
 /**
  * Created by niehongtao on 16/7/8.
- * 2.7
+ * 2.7volatile与synchronized
  */
 public class AccountingVol implements Runnable {
     static AccountingVol instance = new AccountingVol();
