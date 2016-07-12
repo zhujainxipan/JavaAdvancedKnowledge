@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e2db48f-003e-4413-ae7c-8d656e3bb59e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReadWriteLockDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter3/SemapDemo.class" afterPath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter3/SemapDemo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/CountDownLatchDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter3/ReadWriteLockDemo$1.class" afterPath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter3/ReadWriteLockDemo$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter3/ReadWriteLockDemo$2.class" afterPath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter3/ReadWriteLockDemo$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter3/ReadWriteLockDemo.class" afterPath="$PROJECT_DIR$/out/production/JavaAdvancedKnowledge/com/ht/concurrency/chapter3/ReadWriteLockDemo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaAdvancedKnowledge.iws" />
@@ -51,11 +53,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadWriteLockDemo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReadWriteLockDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReadWriteLockDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1929078">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountDownLatchDemo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/CountDownLatchDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.083687946">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/com/ht/refactor/Employee.java" />
         <option value="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/SemapDemo.java" />
         <option value="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReadWriteLockDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/ht/concurrency/chapter3/CountDownLatchDemo.java" />
       </list>
     </option>
   </component>
@@ -268,27 +283,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.ReadWriteLockDemo">
-    <configuration default="false" name="TimeLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ht.concurrency.chapter3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ht.concurrency.chapter3.TimeLock" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="JavaAdvancedKnowledge" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.CountDownLatchDemo">
     <configuration default="false" name="TryLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -357,6 +352,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.ht.concurrency.chapter3.ReadWriteLockDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="JavaAdvancedKnowledge" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ht.concurrency.chapter3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.ht.concurrency.chapter3.CountDownLatchDemo" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -626,19 +641,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.TimeLock" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TryLock" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ReenterLockcondition" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SemapDemo" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ReadWriteLockDemo" />
+      <item index="0" class="java.lang.String" itemvalue="Application.TryLock" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ReenterLockcondition" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SemapDemo" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ReadWriteLockDemo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CountDownLatchDemo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ReadWriteLockDemo" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SemapDemo" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ReenterLockcondition" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TryLock" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TimeLock" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CountDownLatchDemo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ReadWriteLockDemo" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SemapDemo" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ReenterLockcondition" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TryLock" />
       </list>
     </recent_temporary>
   </component>
@@ -736,13 +751,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/lang/ref/SoftReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/lang/ref/Reference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1100,8 +1108,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/ReadWriteLockDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1929078">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ht/concurrency/chapter3/CountDownLatchDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.083687946">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
