@@ -24,8 +24,8 @@ public class Consumer implements Runnable {
                 PCData data = queue.take();
                 if (data != null) {
                     int re = data.getIntData() * data.getIntData();
-                    Thread.sleep(r.nextInt(SLEEPTIME));
                     System.out.println(data.getIntData() + "*" + data.getIntData() + "=" + re);
+                    Thread.sleep(r.nextInt(SLEEPTIME));
                 }
             }
 
