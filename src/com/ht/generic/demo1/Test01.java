@@ -1,7 +1,4 @@
-package com.ht.generic;
-
-import java.util.HashMap;
-import java.util.stream.Stream;
+package com.ht.generic.demo1;
 
 /**
  * Created by niehongtao on 16/7/20.
